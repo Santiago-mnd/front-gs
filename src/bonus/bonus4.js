@@ -3,7 +3,7 @@
 
 // Los parámetros nombrados, como su nobre lo dice, sirve para darle un nombre específico a los parámetros y, por medio de este trabajar sin importar el orden.
 
-// En las funciones generalmente trabajamos con un orden impuesto o, autoimpuesto, es decir, si creamos una función en la cual queramos retornar un nombre varias ves, haríamos algo así:
+// En las funciones generalmente trabajamos con un orden impuesto o, autoimpuesto, es decir, si creamos una función en la cual queramos retornar un nombre varias veces, haríamos algo así:
 
 // const repetir = ( nombre: string, contador: number ) => reutrn nombre.repeat(number)
 // Y la llamaríamos de esta forma: repetir( 'Santiago', 2 ), aquí ya se había impuesto un orden, por lo que, si mandamos como primer argumento el número y como segundo el string, nos dará un error.
