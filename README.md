@@ -20,6 +20,8 @@ Deploy general : https://backendgs.herokuapp.com/login
 #### DB
 - MongoDB
 
+Utilicé create-react-app para poder iniciar de una manera más rápida.
+
 ## Servicios API:
 ### IMPORTANTE
 Para poder acceder a la API se necesita una autenticación vía JWT, ésta se obtiene al hacer login con un usuario existente o, en su defecto, creando una cuenta.
