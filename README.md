@@ -17,6 +17,9 @@ Deploy general : https://backendgs.herokuapp.com/login
 - NodeJS
 - Mongoose
 
+## Repositorio:
+https://github.com/Santiago-mnd/backend-gs
+
 #### DB
 - MongoDB
 
