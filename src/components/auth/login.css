@@ -1,0 +1,90 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.section__login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 26rem;
+}
+
+.section__login--login {
+  width: 28%;
+  background: #f1f1f1;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.section__login--login input {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.section__login--login input[type="submit"] {
+  width: 20%;
+  background: #006240;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.section__login--login input[type="submit"]:hover {
+  background: #fff;
+  color: #006240;
+}
+
+.section__login--signin {
+  width: 28%;
+  background: #006240;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.section__login--signin input {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.section__login--signin input[type="submit"] {
+  width: 20%;
+  background: #fff;
+  color: #006240;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.section__login--signin input[type="submit"]:hover {
+  background: #006240;
+  color: #fff;
+}
