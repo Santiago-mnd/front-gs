@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Deploy:
+Debido a que el deploy es un host gratuito, hay que esperar unos momentos para que inicie, pero sólo serán unos segundos.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deploy general : https://backendgs.herokuapp.com/login
 
-## Available Scripts
+## Tecnologías usadas:
 
-In the project directory, you can run:
+#### STACK MERN
 
-### `npm start`
+#### Front
+- React
+- React Redux
+- React Router
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Back
+- Express
+- NodeJS
+- Mongoose
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Repositorio:
+https://github.com/Santiago-mnd/backend-gs
 
-### `npm test`
+#### DB
+- MongoDB
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Utilicé create-react-app para poder iniciar de una manera más rápida.
 
-### `npm run build`
+## Servicios API:
+### IMPORTANTE
+Para poder acceder a la API se necesita una autenticación vía JWT, ésta se obtiene al hacer login con un usuario existente o, en su defecto, creando una cuenta.
+[![Login example](https://i.postimg.cc/DZ9Q7SQ2/Screenshot-5.jpg "Login example")](https://i.postimg.cc/DZ9Q7SQ2/Screenshot-5.jpg/ "Login example")
+Una vez hecho el login podrás acceder a los endpoints.
+Si se hacen pruebas desde Postman, deberás ir a los headers para colocar tu JWT:
+Key: x-token , Value: JWT:
+[![Postman example](https://i.postimg.cc/KvtLTzfk/Screenshot-4.jpg "Postman example")](https://i.postimg.cc/KvtLTzfk/Screenshot-4.jpg "Postman example")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Peticiones AuthJWT:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+url: https://backendgs.herokuapp.com/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Genera un nuevo Token, ya que éste expira 2 horas después de haberse creado. Desde la web se hace automáticamente.
+GET: url/api/auth/renew
 
-### `npm run eject`
+Petición para hacer el login. Necesita objeto JSON con el email y la password.
+{
+	email: 'example',
+	password: 'example'
+}
+POST: url/api/auth
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Petición para crear un nuevo usuario. Necesita objeto JSON con nombre, email y password.
+{
+	name: 'example'
+	email: 'example',
+	password: 'example
+}
+POST: url/api/auth/new-user
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Peticiones Products:
+Obtiene todos los productos.
+GET: url/api/products/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Crea un nuevo producto, se necesita mandar un objeto JSON con "name, description y price"
+{
+	name: 'example',
+	description: 'example',
+	price: number
+}
+POST: url/api/products/new-product
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Actualiza un producto vía id. Requiere objeto JSON con los datos actualizados.
+PUT: url/api/products/:id
 
-## Learn More
+Elimina un producto vía id.
+DEL: url/api/products/:id
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Peticiones a plazos dados de alta:
+Obtiene todos los plazos.
+GET: url/api/deadlines
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Crea un plazo. Necesita objeto JSON con las semanas.
+{
+	'weeks': 36
+}
+POST: url/api/deadlines/new-deadline
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Aún por terminar:
+- Update y eliminación de productos desde el frontend.
+- Creación de un plazo desde el frontend.
+- Generar de manera más dinámica las cotizaciones desde el frontend.
