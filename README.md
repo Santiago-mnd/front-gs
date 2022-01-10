@@ -56,7 +56,7 @@ Petición para crear un nuevo usuario. Necesita objeto JSON con nombre, email y 
 }
 POST: url/api/auth/new-user
 
-#### Peticiones Products:
+## Peticiones Products:
 Obtiene todos los productos.
 GET: url/api/products/
 
@@ -74,7 +74,7 @@ PUT: url/api/products/:id
 Elimina un producto vía id.
 DEL: url/api/products/:id
 
-#### Peticiones a plazos dados de alta:
+### Peticiones a plazos dados de alta:
 Obtiene todos los plazos.
 GET: url/api/deadlines
 
