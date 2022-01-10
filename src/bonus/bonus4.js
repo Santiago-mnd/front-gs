@@ -5,8 +5,8 @@
 
 // En las funciones generalmente trabajamos con un orden impuesto o, autoimpuesto, es decir, si creamos una función en la cual queramos retornar un nombre varias veces, haríamos algo así:
 
-// const repetir = ( nombre: string, contador: number ) => reutrn nombre.repeat(number)
-// Y la llamaríamos de esta forma: repetir( 'Santiago', 2 ), aquí ya se había impuesto un orden, por lo que, si mandamos como primer argumento el número y como segundo el string, nos dará un error.
+// const repetir = ( nombre: string, contador: number ) => return nombre.repeat(number)
+// Y la llamaríamos de esta forma: repetir( 'Santiago', 2 ), aquí ya se habría impuesto un orden, por lo que, si mandamos como primer argumento el número y como segundo el string, nos dará un error.
 
 // Para poder "romper" este orden, utilizamos los parámetros nombrados.
 
