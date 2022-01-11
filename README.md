@@ -1,7 +1,7 @@
 # Deploy:
 Debido a que el deploy es un host gratuito, hay que esperar unos momentos para que inicie, pero sólo serán unos segundos.
 
-Deploy general : https://backendgs.herokuapp.com/login
+Deploy general : https://backendgs.herokuapp.com
 
 ## Tecnologías usadas:
 
