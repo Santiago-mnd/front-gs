@@ -1,7 +1,16 @@
 # Deploy:
+
+## Notas
+
 Debido a que el deploy es un host gratuito, hay que esperar unos momentos para que inicie, pero sólo serán unos segundos.
 
 Deploy general : https://backendgs.herokuapp.com
+
+
+Utilicé create-react-app para poder iniciar de una manera más rápida en la parte frontend.
+
+Agregué una carpeta dentro del src de este proyecto con los "bonus". Esta carpeta no afecta en nada al proyecto.
+Sigo en el aprendizaje de los testeos, por lo cual he preferido no colocarlos hasta no tener un mejor entendimiento de éstos.
 
 He dejado un correo listo para iniciar sesión y uno listo para el registro, aunque invito a que se registren ya que se pueden registrar nuevos usuarios, claro, puede ser con un correo no existente, pero con la sintaxis obligatoria de un correo.
 
@@ -28,11 +37,6 @@ Se podría agregar una capa de seguridad para que no cualquier persona se pueda 
 
 ## Repositorio:
 https://github.com/Santiago-mnd/backend-gs
-
-## Notas
-Utilicé create-react-app para poder iniciar de una manera más rápida.
-
-Agregué una carpeta dentro del src de este proyecto con los "bonus". Esta carpeta no afecta en nada al proyecto.
 
 ## Servicios API:
 ### IMPORTANTE
@@ -102,6 +106,6 @@ Crea un plazo. Necesita objeto JSON con las semanas.
 POST: url/api/deadlines/new-deadline
 
 ## Aún por terminar:
-- Update y eliminación de productos desde el frontend.
-- Creación de un plazo desde el frontend.
-- Generar de manera más dinámica las cotizaciones desde el frontend.
+- Update y eliminación de productos desde el frontend. (Desde backend listo)
+- Creación de un plazo desde el frontend. (Desde backend listo)
+- Generar de manera más dinámica las cotizaciones desde el frontend. 
