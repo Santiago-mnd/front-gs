@@ -17,11 +17,11 @@ Deploy general : https://backendgs.herokuapp.com
 - NodeJS
 - Mongoose
 
-## Repositorio:
-https://github.com/Santiago-mnd/backend-gs
-
 #### DB
 - MongoDB
+
+## Repositorio:
+https://github.com/Santiago-mnd/backend-gs
 
 ## Notas
 Utilicé create-react-app para poder iniciar de una manera más rápida.
