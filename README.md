@@ -106,6 +106,9 @@ Crea un plazo. Necesita objeto JSON con las semanas.
 POST: url/api/deadlines/new-deadline
 
 ## Aún por terminar:
+
+### En esta parte indico algunos procesos que no logré hacer funcionar.
+
 - Update y eliminación de productos desde el frontend. (Desde backend listo)
 - Creación de un plazo desde el frontend. (Desde backend listo)
 - Generar de manera más dinámica las cotizaciones desde el frontend. 
