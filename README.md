@@ -23,7 +23,9 @@ https://github.com/Santiago-mnd/backend-gs
 #### DB
 - MongoDB
 
+## Notas
 Utilicé create-react-app para poder iniciar de una manera más rápida.
+Agregué una carpeta dentro del src de este proyecto con los "bonus". Esta carpeta no afecta en nada al proyecto.
 
 ## Servicios API:
 ### IMPORTANTE
