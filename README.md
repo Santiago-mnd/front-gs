@@ -3,6 +3,10 @@ Debido a que el deploy es un host gratuito, hay que esperar unos momentos para q
 
 Deploy general : https://backendgs.herokuapp.com
 
+He dejado un correo listo para iniciar sesión y uno listo para el registro, aunque invito a que se registren ya que se pueden registrar nuevos usuarios, claro, puede ser con un correo no existente, pero con la sintaxis obligatoria de un correo.
+
+Esto está hecho con la finalidad de poder guardar el último usuario que ha creado, o modificado algo y, así poder contactarle para mejorar la comunicación al saber qué ha hecho y por qué lo ha hecho.
+
 ## Tecnologías usadas:
 
 #### STACK MERN
