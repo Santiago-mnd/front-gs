@@ -7,6 +7,8 @@ He dejado un correo listo para iniciar sesión y uno listo para el registro, aun
 
 Esto está hecho con la finalidad de poder guardar el último usuario que ha creado, o modificado algo y, así poder contactarle para mejorar la comunicación al saber qué ha hecho y por qué lo ha hecho.
 
+Se podría agregar una capa de seguridad para que no cualquier persona se pueda registrar y acceder, pero, por practicidad y demostración, cualquier usuario puede registrarse.
+
 ## Tecnologías usadas:
 
 #### STACK MERN
@@ -49,18 +51,22 @@ Genera un nuevo Token, ya que éste expira 2 horas después de haberse creado. D
 GET: url/api/auth/renew
 
 Petición para hacer el login. Necesita objeto JSON con el email y la password.
+
 {
 	email: 'example',
 	password: 'example'
 }
+
 POST: url/api/auth
 
 Petición para crear un nuevo usuario. Necesita objeto JSON con nombre, email y password.
+
 {
 	name: 'example'
 	email: 'example',
 	password: 'example
 }
+
 POST: url/api/auth/new-user
 
 ## Peticiones Products:
@@ -68,11 +74,13 @@ Obtiene todos los productos.
 GET: url/api/products/
 
 Crea un nuevo producto, se necesita mandar un objeto JSON con "name, description y price"
+
 {
 	name: 'example',
 	description: 'example',
 	price: number
 }
+
 POST: url/api/products/new-product
 
 Actualiza un producto vía id. Requiere objeto JSON con los datos actualizados.
@@ -86,9 +94,11 @@ Obtiene todos los plazos.
 GET: url/api/deadlines
 
 Crea un plazo. Necesita objeto JSON con las semanas.
+
 {
 	'weeks': 36
 }
+
 POST: url/api/deadlines/new-deadline
 
 ## Aún por terminar:
